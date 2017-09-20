@@ -1,0 +1,66 @@
+
+Dataset info
+=================
+The experiments were carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
+Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, 
+LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and 
+gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 
+50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has 
+been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the 
+training data and 30% the test data. 
+For each record it is provided:
+
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables. 
+- Its activity label. 
+- An identifier of the subject who carried out the experiment. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals
+(tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were 
+calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag,
+tBodyGyroJerkMag). A Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ,
+fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (
+
+
+Variables used
+=================
+
+Mean Values and standard deviations were calculated from these signals- these are the data that are selected 
+by the run_analysis script. The variables listed are as follows: (t= time domain, f = frequency domain
+
+"tBodyAcc_mean_X"
+"tBodyAcc_mean_Y"
+"tBodyAcc_mean_Z"
+"tBodyAcc_std_X"
+"tBodyAcc_std_Y"
+"tBodyAcc_std_Z"
+"tGravityAcc_mean_X"
+"tGravityAcc_mean_Y"
+"tGravityAcc_mean_Z"
+"tGravityAcc_std_X"
+"tGravityAcc_std_Y"
+"tGravityAcc_std_Z"
+"tBodyAccJerk_mean_X"
+"tBodyAccJerk_mean_Y"
+"tBodyAccJerk_mean_Z"
+"tBodyAccJerk_std_X"
+"tBodyAccJerk_std_Y"
+"tBodyAccJerk_std_Z"
+"tBodyGyro_mean_X"
+"tBodyGyro_mean_Y"
+"tBodyGyro_mean_Z"
+"tBodyGyro_std_X"
+"tBodyGyro_std_Y"
+"tBodyGyro_std_Z"
+"tBodyGyroJerk_mean_X"
+"tBodyGyroJerk_mean_Y"
+"tBodyGyroJerk_mean_Z"
+"tBodyGyroJerk_std_X"
+"tBodyGyroJerk_std_Y"
+"tBodyGyroJerk_std_Z"
+"tBodyAccMag_mean"
+
+Also included is the "Subject" vraiable, a factor variable from 1-30 denoting the subject id, and "Activity", 
+a factor variable denoting which of the six activities was being performed (activities are "WALKING",
+"WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING").

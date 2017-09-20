@@ -4,7 +4,7 @@ This repository contains my run_analysis script and its codebook. The run_analyi
 -Creates function readt() that takes as input the tail of the file directory of one of the text files, and creates a named data frame in R. 
 -Creates functions Activity() and subject() that renames the variables of the subject and activity tables from "V1" to activity and subject.
 -Then following the steps of the assignment:
-#1 combines the accelorometer/gyroscope data with the activity and subjet data, for both test and train datasets, then combines the two into a longer data frame.
+#1 combines the accelorometer/gyroscope data with the activity and subject data, for both test and train datasets, then combines the two into a longer data frame.
 #2 renames the variables using the feature.txt data, and selects mean and std columns with. subsetting by grep output fr this regex.
 #3 creates yo function which transforms a value of x into the corresponding activity name from activity.txt. yo is applied to the Activity column of the dataframe, and replaces the old column
 #4 Tidies up some of the special characters in the column names to underscores- note that I already applied the feature names to the columsn in step 2.
